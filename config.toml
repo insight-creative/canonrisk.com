@@ -1,6 +1,6 @@
 baseURL = "/"
 languageCode = "en-us"
-title = "Quintessence"
+title = "Canon Risk Consultants"
 enableRobotsTXT = true
 disableAliases = true
 # post pagination
@@ -11,7 +11,7 @@ summaryLength = 30
 
 [params]
   minifyBundles = true
-  imgixDomain = "https://stadium-bike.imgix.net"
+  imgixDomain = "https://canonrisk.imgix.net"
 
 # add redirects/headers
   [outputs]

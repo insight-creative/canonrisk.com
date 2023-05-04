@@ -5,8 +5,8 @@
   left: 0;
   z-index: 9;
   transition: $transition;
-  background-color: $white;
-  box-shadow: 0 4px 6px -6px;
+  background-color: $primary-color;
+  padding-block: 10px;
 }
 
 .header__hamburger {
@@ -147,7 +147,7 @@
 }
 
 .header__logo {
-  max-width: clamp(150px, 20vw, 200px);
+  max-width: clamp(85px, 20vw, 115px);
 }
 
 .header__nav {
@@ -245,9 +245,12 @@
 
   @include breakpoint(md) {
     text-decoration: none;
-    color: $black;
-    font-family: $secondary-font;
-    font-size: 1.2rem;
+    color: $white;
+    font-family: $primary-font;
+    font-size: 1.1rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 2px;
     transition: $transition;
     
     &:hover,

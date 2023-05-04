@@ -1,20 +1,43 @@
 .hero {
   position: relative;
   height: 300px;
+  background: linear-gradient(180deg, #00635b 60%, #006e63, #00796a, #008571, #009078, #009c7d, #00a783, #00b388);
+  display: grid;
 
-  @include breakpoint(md) {
-    height: 400px; 
+  > * {
+    grid-area: 1/-1;
   }
 
-  &__image {
-    position: absolute;
+  @include breakpoint(md) {
+    height: 75vh;
+    max-height: 700px;
+  }
+}
+
+.hero__content {
+  margin: auto 0;
+}
+
+.hero__subheading {
+  font-family: $primary-font;
+  font-size: $ic-200;
+  opacity: .8;
+  max-width: none;
+  margin-block-start: 8px;
+}
+
+.hero__body {
+  max-width: 550px;
+}
+
+.hero__image {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+
+  img {
     height: 100%;
     width: 100%;
-
-    img {
-      height: 100%;
-      width: 100%;
-      object-fit: cover;
-    }
+    object-fit: cover;
   }
 }

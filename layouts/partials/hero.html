@@ -1,22 +1,27 @@
 {{ $heroClass := lower .Page.Title }}
-<section aria-labelledby="hero-heading" class="hero {{ anchorize $heroClass }}-hero columns gap-md">
-  <div class="col p-relative">
-    {{ partial "hero-image" . }}
-  </div>
-  <div class="col">
-    <div class="hero__content-inner w-100 flow">
-      <h1 id="hero-heading">{{ .Params.hero.heading | safeHTML }}</h1>
-      <div class="fw-500 flow">{{ .Params.hero.body | markdownify }}</div>
-      {{ if .Params.hero.button.enabled }}
+<section aria-labelledby="hero-heading" class="hero {{ anchorize $heroClass }}-hero block">
+  <div class="wrapper-lg columns gap-xl">
+    <div class="hero__content col">
+      <div class="hero__content-inner w-100 flow text-color-white">
+        <div>
+          <span id="hero-heading" class="h1 no-margin">{{ .Params.hero.heading }}</span>
+          <h1 id="hero-heading" class="hero__subheading">{{ .Params.hero.subheading }}</h1>
+        </div>
+        <div class="hero__body flow">{{ .Params.hero.body | markdownify }}</div>
+        {{ if .Params.hero.button.enabled }}
         {{ with .Params.hero.button }}
-          {{ partial "button-primary" . }}
+        {{ partial "button-primary" . }}
         {{ end }}
-      {{ end }}
-      {{ if .Params.hero.button_2.enabled }}
+        {{ end }}
+        {{ if .Params.hero.button_2.enabled }}
         {{ with .Params.hero.button_2 }}
-          {{ partial "button-primary" . }}
+        {{ partial "button-primary" . }}
         {{ end }}
-      {{ end }}
+        {{ end }}
+      </div>
+    </div>
+    <div class="col p-relative">
+      {{ partial "hero-image" . }}
     </div>
   </div>
 </section>

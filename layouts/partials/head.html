@@ -32,10 +32,15 @@
     <link href="{{ site.Params.imgixDomain }}" rel="preconnect">
 
     <link rel="canonical" href="{{ site.BaseURL }}{{ .Permalink }}">
-  
+
     {{ $scss := resources.Get "scss/main.scss" | toCSS }}
     {{ $postcss := $scss | resources.PostCSS | minify }}
     <link rel="stylesheet" href="{{ $postcss.Permalink }}">
+
+    <!-- Preconnect to Adobe Fonts -->
+    <link rel="preconnect" href="https://use.typekit.net" crossorigin>
+
+    <link rel="stylesheet" href="https://use.typekit.net/ueh1bej.css">
   
     {{ "<!--Favicon-->" | safeHTML }}
     <link rel="icon" href="/uploads/favicon.svg">
