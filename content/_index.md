@@ -37,7 +37,7 @@ intro:
     
     - Services tailored to specific needs
   image: 
-    image_url: /uploads/doctor-speaking-with-patient.jpg
+    image_url: /uploads/man-at-laptop-reviewing-invoice.jpg
     image_alt:
   button:
     enabled: true

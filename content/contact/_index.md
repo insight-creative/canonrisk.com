@@ -8,14 +8,14 @@ menu:
 seo:
   page_title: Contact Us | Medical Cost Containment Services
   meta_description: Contact Canon Risk Consultants for expert medical cost containment and risk transfer. Our team offers fast, reliable bill review, negotiation and resolution.
-  featured_image:
+  featured_image: /uploads/woman-on-phone-reviewing-paperwork.jpg
 hero: 
   enabled: true
   heading: Contact Us
   body: >-
     Contact Canon Risk Consultants for expert medical cost containment and risk transfer. Our team offers fast, reliable bill review, negotiation and resolution.
   image: 
-    image_url: /uploads/doctor-speaking-with-patient.jpg
+    image_url: /uploads/woman-on-phone-reviewing-paperwork.jpg
     image_alt:
   button:
     enabled: false
@@ -29,7 +29,7 @@ hero:
     button_text: Contact Us
 intro: 
   enabled: true
-  heading: How We Can Help You!
+  heading: Let Us Help You!
   subheading:
   body: >-
     For questions about Canon Risk Consultants’ medical cost containment and risk transfer services, please complete the form below or call us directly at NEED NUMBER. 
