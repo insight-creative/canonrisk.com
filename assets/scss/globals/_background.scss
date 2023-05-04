@@ -10,9 +10,9 @@
   background-color: $black;
 }
 
-.bg-gray {
-  background-color: $light-gray;
-}
+// .bg-gray {
+//   background-color: $light-gray;
+// }
 
 .bg-white {
   background-color: $white;
@@ -20,4 +20,39 @@
 
 .bg-accent {
   background-color: $secondary-color;
+}
+
+.bg-pattern {
+  background-image: url(/uploads/canon-pattern.png);
+  background-repeat: repeat;
+  // background-image: url(/uploads/shield-group.png);
+  // background-repeat: no-repeat;
+  // background-position: top left;
+  // background-size: auto;
+}
+
+.bg-gray {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 80%;
+    background-color: $light-gray;
+    z-index: -1;
+  }
+}
+
+.bg-gray--right::before {
+  right: 0;
+}
+
+.bg-gray--left::before {
+  left: 0;
+}
+
+.bg-gradient {
+  background: linear-gradient(90deg, #00635b, #006e63, #00796a, #008571, #009078, #009c7d, #00a783, #00b388);
 }

@@ -1,0 +1,26 @@
+<section aria-labelledby="{{ .heading | urlize }}" class="strengths block bg-gray bg-gray--left">
+  <div class="wrapper-lg columns gap-xl">
+    <div class="intro__content col flow">
+      {{ partial "heading" . }}
+      {{ range .strengths }}
+      <div class="flex gap-sm">     
+        <div class="strengths__icon">
+          <img src="{{ .icon }}" alt="">
+        </div>   
+        <div>
+          <h3 class="mb-1 h4">{{ .heading }}</h3>
+          <div>{{ .body }}</div>
+        </div>
+      </div>
+      {{ end }}
+      {{ if .button.enabled }}
+        {{ with .button }}
+          {{ partial "button-primary" . }}
+        {{ end }}
+      {{ end }}
+    </div>
+    <div class="col">
+      {{ partial "responsive-image" . }}
+    </div>
+  </div>
+</section>

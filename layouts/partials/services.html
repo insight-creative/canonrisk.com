@@ -1,0 +1,13 @@
+<section aria-labelledby="{{ .heading | urlize }}" class="block bg-primary bg-pattern">
+    <div class="wrapper-lg text-align-center text-color-white">
+        {{ partial "heading" . }}
+    </div>
+    <ul class="wrapper-lg grid-columns-3">
+        {{ range .services }}
+        <li class="card card--service text-color-white flow">
+            <h3 class="h4">{{ .heading }}</h3>
+            <div class="font-size-xs">{{ .body }}</div>
+        </li>
+        {{ end }}
+    </ul>
+</section>

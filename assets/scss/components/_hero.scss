@@ -1,6 +1,5 @@
 .hero {
   position: relative;
-  height: 300px;
   background: linear-gradient(180deg, #00635b 60%, #006e63, #00796a, #008571, #009078, #009c7d, #00a783, #00b388);
   display: grid;
 
@@ -14,8 +13,9 @@
   }
 }
 
-.hero__content {
+.hero .col {
   margin: auto 0;
+  flex-basis: calc(min(100%,400px));
 }
 
 .hero__subheading {
@@ -31,13 +31,14 @@
 }
 
 .hero__image {
-  position: absolute;
-  height: 100%;
-  width: 100%;
+  position: relative;
+  top: 40px;
+}
 
-  img {
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-  }
+.hero .canon-logo-mark {
+  position: absolute;
+  top: 100%;
+  left: 100%;
+  z-index: 3;
+  transform: translate(-50%, -50%);
 }

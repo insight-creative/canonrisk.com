@@ -3,17 +3,17 @@
   z-index: 1;
   display: inline-block;
   font-family: $secondary-font;
-  font-size: $ic--200;
+  font-size: $ic--100;
   text-transform: uppercase;
   letter-spacing: 2px;
   font-weight: 700;
-  padding: $ic-100 $ic-400;
+  padding: $ic-100 $ic-500;
   text-decoration: none;
   transition: $transition;
   width: max-content;
 
   @include breakpoint(sm) {
-    font-size: $ic--100;
+    font-size: $ic-100;
   }
 
   &:hover,

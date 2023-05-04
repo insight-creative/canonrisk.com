@@ -1,0 +1,36 @@
+.decorative-image img {
+  border-top-right-radius: 90px;
+  border-bottom-left-radius: 90px;
+}
+ 
+.decorative-image::after {
+  border-top-right-radius: 100px;
+  border-bottom-left-radius: 100px;
+}
+
+.decorative-image {
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      left: -20px;
+      bottom: -20px;
+      z-index: 1;
+      height: 100%;
+      width: 100%;
+    }
+
+    img {
+      position: relative;
+      z-index: 2;
+    }
+}
+
+.decorative-image--secondary::after {
+    background-color: $secondary-color;
+}
+
+.decorative-image--primary::after {
+    background-color: $primary-color;
+}

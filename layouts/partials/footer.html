@@ -1,7 +1,13 @@
 <footer class="footer">
-  <div class="footer__top"></div>
-  <div class="footer__bottom wrapper-lg">
-    <div class="copyright flex flex-column flex-row-md flex-center">
+  <div class="wrapper-lg">
+    <div class="footer__top">
+      <a class="footer__logo" href="{{ site.BaseURL }}">
+        <img src="{{ .Site.Data.site_settings.footer_logo }}" alt="{{ .Site.Data.site_settings.business_name }} logo" class="img-responsive dim" width="275" height="125">
+      </a>
+    </div>
+  </div>
+  <div class="footer__bottom copyright bg-black">
+    <div class="wrapper-lg flex flex-column flex-row-md flex-center">
       <p>© {{ dateFormat "2006" now }} {{ .Site.Data.site_settings.business_name }}</p>
       <ul class="copyright__nav flex flex-justify-center flex-justify-start-md">
         <li class="copyright__list-item"><a href="/privacy-policy/" class="copyright__nav-item">Privacy Policy</a></li>

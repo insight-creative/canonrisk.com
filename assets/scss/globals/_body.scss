@@ -42,16 +42,16 @@ main:focus {
 
 // Style highlight to match our themes colors
 ::-moz-selection {
-  background: rgba($primary-color, 0.8);
+  background: rgba($secondary-color, 0.8);
   color: $white;
 }
 
 ::selection {
-  background: rgba($primary-color, 0.8);
+  background: rgba($secondary-color, 0.8);
   color: $white;
 }
 
 ::-ms-selection {
-  background: rgba($primary-color, 0.8);
+  background: rgba($secondary-color, 0.8);
   color: $white;
 }

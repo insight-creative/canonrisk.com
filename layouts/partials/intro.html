@@ -1,13 +1,18 @@
-<section aria-labelledby="{{ .heading | urlize }}" class="intro block">
-  <div class="wrapper flow">
-    {{ partial "heading" . }}
-    {{ if .body }}
-      <p>{{ .body | markdownify }}</p>
-    {{ end }} 
-    {{ if .button.enabled }}
-      {{ with .button }}
-        {{ partial "button-primary" . }}
+<section aria-labelledby="{{ .heading | urlize }}" class="intro block-xl bg-gray bg-gray--right">
+  <div class="wrapper-lg columns gap-xl">
+    <div class="col">
+      {{ partial "responsive-image" . }}
+    </div>
+    <div class="intro__content col">
+      {{ partial "heading" . }}
+      {{ if .body }}
+        <div>{{ .body | markdownify }}</div>
       {{ end }}
-    {{ end }}
+      {{ if .button.enabled }}
+        {{ with .button }}
+          {{ partial "button-primary" . }}
+        {{ end }}
+      {{ end }}
+    </div>
   </div>
 </section>
