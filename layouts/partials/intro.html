@@ -3,10 +3,10 @@
     <div class="col">
       {{ partial "responsive-image" . }}
     </div>
-    <div class="intro__content col">
+    <div class="intro__content col flow">
       {{ partial "heading" . }}
       {{ if .body }}
-        <div>{{ .body | markdownify }}</div>
+        <div class="flow">{{ .body | markdownify }}</div>
       {{ end }}
       {{ if .button.enabled }}
         {{ with .button }}

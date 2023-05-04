@@ -1,6 +1,15 @@
 {{ define "main" }}
 {{ partial "hero" . }}
-{{ partial "breadcrumbs" . }}
+{{ if .Params.intro.enabled }}
+  {{ with .Params.intro }}
+  <section aria-labelledby="{{ .heading | urlize }}" class="block">
+    <div class="wrapper-lg flow">
+        {{ partial "heading" . }}
+        <div class="flow">{{ .body | markdownify }}</div>
+    </div>
+  </section>
+  {{ end }}
+{{ end }}
 <div class="block">
   <div class="wrapper-lg columns-two-thirds-left gap-md">
     <div class="col">

@@ -1,9 +1,50 @@
 {{ define "main" }}
 {{ partial "hero" . }}
-{{ partial "breadcrumbs" . }}
-<div class="block">
-    <div class="wrapper-sm flow">
-        {{ .Content  }}
-    </div>
-</div>
+{{ if .Params.intro.enabled }}
+  {{ with .Params.intro }}
+    {{ partial "intro" . }}
+  {{ end }}
+{{ end }}
+{{ if .Params.benefits.enabled }}
+    {{ with .Params.benefits }}
+    <section aria-labelledby="{{ .heading | urlize }}" class="block">
+        <div class="wrapper-lg text-align-center">
+            {{ partial "heading" . }}
+        </div>
+        <div class="wrapper-lg columns gap-xl mt-6">
+            {{ range .benefits }}
+            <div class="col flow">
+                <h3 class="h4">{{ .heading }}</h3>
+                <div class="font-size-x">{{ .body }}</div>
+            </div>
+            {{ end }}
+        </div>
+    </section>
+    {{ end }}
+{{ end }}
+{{ if .Params.our_founder.enabled }}
+    {{ with .Params.our_founder }}
+    <section aria-labelledby="{{ .heading | urlize }}" class="block bg-primary bg-pattern">
+        <div class="wrapper-sm text-color-white">
+            {{ partial "heading" . }}
+            <div class="flow">{{ .body | markdownify }}</div>
+        </div>
+    </section>
+    {{ end }}
+{{ end }}
+{{ if .Params.our_founding_philosophy.enabled }}
+    {{ with .Params.our_founding_philosophy }}
+    <section aria-labelledby="{{ .heading | urlize }}" class="block">
+        <div class="wrapper-sm flow">
+            {{ partial "heading" . }}
+            <div class="flow">{{ .body | markdownify }}</div>
+            {{ if .button.enabled }}
+                {{ with .button }}
+                    {{ partial "button-primary" . }}
+                {{ end }}
+            {{ end }}
+        </div>
+    </section>
+    {{ end }}
+{{ end }}
 {{ end }}

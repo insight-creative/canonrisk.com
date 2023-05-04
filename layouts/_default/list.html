@@ -1,6 +1,10 @@
 {{ define "main" }}
 {{ partial "hero" . }}
-{{ partial "breadcrumbs" . }}
+{{ if .Params.intro.enabled }}
+  {{ with .Params.intro }}
+    {{ partial "intro" . }}
+  {{ end }}
+{{ end }}
 <div class="block">
     <div class="wrapper-sm flow">
         {{ .Content  }}
