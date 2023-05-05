@@ -11,7 +11,7 @@ hero:
   body: >-
     We help insurance providers, third-party administrators (TPAs), government entities and self-insured industries transfer the risk of medical costs to us.
   image: 
-    image_url: /uploads/doctor-speaking-with-patient.jpg
+    image_url: /uploads/woman-reviewing-invoice-at-desk-2.jpg
     image_alt:
   button:
     enabled: false
