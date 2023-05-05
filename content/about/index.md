@@ -15,7 +15,7 @@ hero:
   body: >-
     Canon Risk Consultants is a top-tier medical cost containment company offering fast, expert hospital bill review, negotiation, resolution and risk transfer.
   image: 
-    image_url: /uploads/doctor-speaking-with-patient.jpg
+    image_url: /uploads/woman-reviewing-invoice-at-desk-2.jpg
     image_alt:
   button:
     enabled: false
@@ -37,7 +37,7 @@ intro:
 
     With an unparalleled background in healthcare, our team is comprised of some of the top professionals in the industry. We pride ourselves on being able to offer our clients personalized service, maximum savings and timely, accurate support.
   image: 
-    image_url: /uploads/doctor-speaking-with-patient.jpg
+    image_url: /uploads/woman-reviewing-invoice-at-desk-3.jpg
     image_alt:
   button:
     enabled: false

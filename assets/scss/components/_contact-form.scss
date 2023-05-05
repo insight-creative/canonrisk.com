@@ -50,6 +50,10 @@
   }
 }
 
+.contact-form__form-group select {
+  padding: 0 $ic-200;
+}
+
 .contact-form__form-group textarea {
   height: $ic-1000;
 }
