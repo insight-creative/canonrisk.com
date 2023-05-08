@@ -7,15 +7,14 @@
     grid-area: 1/-1;
   }
 
-  @include breakpoint(md) {
-    height: 75vh;
-    max-height: 700px;
-  }
+  // @include breakpoint(md) {
+  //   height: 75vh;
+  //   max-height: 700px;
+  // }
 }
 
 .hero .col {
   margin: auto 0;
-  flex-basis: calc(min(100%,400px));
 }
 
 .hero__subheading {
@@ -32,15 +31,23 @@
 
 .hero__image {
   position: relative;
-  top: 40px;
+
+  @include breakpoint(md) {
+    top: 40px;
+  }
 }
 
 .hero .canon-logo-mark {
-  position: absolute;
-  top: 100%;
-  left: 100%;
-  z-index: 3;
-  transform: translate(-50%, -50%);
+  display: none;
+
+  @include breakpoint(sm) {
+    display: block;
+    position: absolute;
+    top: 100%;
+    left: 100%;
+    z-index: 3;
+    transform: translate(-50%, -50%);
+  }
 }
 
 .hero__cta-small {

@@ -1,11 +1,11 @@
 .decorative-image img {
-  border-top-right-radius: 90px;
-  border-bottom-left-radius: 90px;
+  border-top-right-radius: clamp(40px, 10vw, 90px);
+  border-bottom-left-radius: clamp(40px, 10vw, 90px);
 }
  
 .decorative-image::after {
-  border-top-right-radius: 100px;
-  border-bottom-left-radius: 100px;
+  border-top-right-radius: clamp(50px, 10vw, 100px);
+  border-bottom-left-radius: clamp(50px, 10vw, 100px);
 }
 
 .decorative-image {
