@@ -32,7 +32,7 @@ intro:
   heading: Let Us Help You!
   subheading:
   body: >-
-    For questions about Canon Risk Consultants, please complete the form below or call us directly at NEED NUMBER. 
+    For questions about Canon Risk Consultants, please complete the form below or call us directly at <a href="tel:920-288-2309">920-288-2309</a>. 
 
 
     Once client information is received, our team of experts works diligently to analyze medical bills and claims within 48 hours.
