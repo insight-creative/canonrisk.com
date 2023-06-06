@@ -32,9 +32,9 @@ intro:
   heading: Independently Owned Medical Cost Containment Company
   subheading:
   body: >-
-    Canon Risk Consultants is an independently owned medical cost containment company dedicated to providing the best in medical bill analysis and risk transfer. 
-
-
+    Canon Risk Consultants is an independently owned medical cost containment company dedicated to providing the best in medical bill analysis and risk transfer.
+    
+    
     With an unparalleled background in healthcare, our team is comprised of some of the top professionals in the industry. We pride ourselves on being able to offer our clients personalized service, maximum savings and timely, accurate support.
   image: 
     image_url: /uploads/woman-reviewing-invoice-at-desk-3.jpg
@@ -59,12 +59,12 @@ our_founder:
   heading: Our Founder
   subheading:
   body: >-
-    Lauren Underhill is president and CEO of Canon Risk Consultants, a premier medical cost containment company. Her experience in the healthcare industry spans more than two decades. She built her expertise first as an occupational therapist and assistive technology professional and most recently as founder of CorLife, a company personalizing the ancillary benefits experience for workers’ compensation carriers nationwide. 
+    Lauren Underhill is president and CEO of Canon Risk Consultants, a premier medical cost containment company. Her experience in the healthcare industry spans more than two decades. She built her expertise first as an occupational therapist and assistive technology professional and most recently as founder of CorLife, a company personalizing the ancillary benefits experience for workers’ compensation carriers nationwide.
 
 
     In 2021, Underhill sold CorLife to Numotion. She now wants to use her knowledge of the medical industry to help in the cost containment field. 
     
-
+    
     Underhill holds a master’s degree in occupational therapy from Concordia University and a bachelor’s degree in biology from University of Wisconsin–Eau Claire. She is certified as an Assistive Technology Professional and is a Certified Aging in Place Specialist. Canon Risk Consultants is her third company.
   button:
     enabled: false
@@ -81,6 +81,6 @@ our_founding_philosophy:
     enabled: true
     open_in_new_tab: false
     button_url: /contact/
-    button_text: Contact Us Today
+    button_text: Make a Referral
 ---
 
