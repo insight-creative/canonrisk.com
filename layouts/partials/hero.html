@@ -4,7 +4,7 @@
     <div class="hero__content col">
       <div class="hero__content-inner w-100 flow text-color-white">
         <div>
-          {{ if eq .Title "Home" }}
+          {{ if .IsHome }}
             <span class="h1 no-margin">{{ .Params.hero.heading }}</span>
             <h1 id="hero-heading" class="hero__subheading">{{ .Params.hero.subheading }}</h1>
           {{ else }}
