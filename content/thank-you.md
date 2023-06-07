@@ -6,11 +6,12 @@ seo:
   meta_description: Thank you for your message!
   featured_image: 
   featured_image_alt:
-hero:
+hero: 
   enabled: true
   heading: Thank You
-  body:
-  hero_image:
-    image:
-    image_alt:
+  body: >-
+    
+  image: 
+    image_url: /uploads/woman-on-phone-reviewing-paperwork.jpg
+    image_alt: Woman talking on cell phone while reviewing medical invoice
 ---

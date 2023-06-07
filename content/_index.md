@@ -12,7 +12,7 @@ hero:
     We partner with insurance providers, third-party administrators (TPAs), government entities and self-insured industries to assess financial risk of medical claims and navigate a conservative fiscal path forward.
   image: 
     image_url: /uploads/woman-reviewing-invoice-at-desk.jpg
-    image_alt:
+    image_alt: Woman using calculator while review a medical invoice on her computer screen
   button:
     enabled: false
     open_in_new_tab: true
@@ -38,7 +38,7 @@ intro:
     - Services tailored to specific needs
   image: 
     image_url: /uploads/man-at-laptop-reviewing-invoice.jpg
-    image_alt:
+    image_alt: Man in blue shirt reviewing medical billing invoice
   button:
     enabled: true
     open_in_new_tab: false
@@ -75,7 +75,7 @@ strengths:
       icon: /uploads/hands-with-money.svg
   image: 
     image_url: /uploads/doctor-speaking-with-patient.jpg
-    image_alt:
+    image_alt: Doctor reviewing medical billing with a patient
   button:
     enabled: false
     open_in_new_tab: false

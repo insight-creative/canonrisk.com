@@ -15,14 +15,6 @@
                 </ul>
             </div>
             <div class="col">
-                <h2>Blog</h2>
-                <ul>
-                    {{ $pages := .Site.RegularPages }}
-                    {{ $blog := where $pages "Type" "blog" }}
-                    {{ range $blog }}
-                    <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
-                    {{ end }}
-                </ul>
             </div>
         </div>
     </div>

@@ -1,9 +1,8 @@
 console.log('%c Crafted by Insight Creative, Inc. Designed and Developed by Justin Parsons', 'background: #1d1d1d; color: white; padding: 5px 10px;')
 
-import { toggleMobileMenu, toggleMobileDropdowns, filterPosts, toggleLayout } from "./partials";
-
 const siteHeader = document.querySelector(".header")
-const hasSubMenu = document.querySelectorAll(".has-sub-menu")
+const mobileMenu = document.querySelector('.header__mobile-nav');
+const hamburger = document.querySelector('.hamburger');
 
 let scrollState = 0;
 
@@ -42,33 +41,18 @@ window.addEventListener("scroll", () => {
   }
 });
 
-hasSubMenu.forEach((link) => {
-  // Helper function to set ARIA-expanded attribute
-  function setAriaExpandedAttribute(element, value) {
-    element.setAttribute("aria-expanded", value);
-  };
+hamburger.addEventListener('click', toggleMobileMenu);
 
-  const subMenuToggle = document.querySelector(".sub-menu-toggle");
-  const subMenuLinks = link.querySelectorAll(".header__sub-menu-link");
-
-  function openSubMenu() {
-    link.classList.add("has-sub-menu-open");
-    subMenuToggle.classList.add("sub-menu-is-toggled");
-    setAriaExpandedAttribute(subMenuToggle, "true");
-  };
-
-  function closeSubMenu() {
-    link.classList.remove("has-sub-menu-open");
-    subMenuToggle.classList.remove("sub-menu-is-toggled");
-    setAriaExpandedAttribute(subMenuToggle, "false");
-  };
-
-  link.addEventListener("mouseover", openSubMenu);
-  link.addEventListener("mouseout", closeSubMenu);
-
-  // ensure that we open our sub menu when sub menu links are tabbed and focused rather than these remaining visually hidden
-  subMenuLinks.forEach((subMenuLink) => {
-    subMenuLink.addEventListener("focus", openSubMenu);
-    subMenuLink.addEventListener("blur", closeSubMenu);
-  });
-});
+function toggleMobileMenu() {
+  if (mobileMenu.classList.contains('nav-open')) {
+    this.setAttribute('aria-expanded', 'false');
+    this.setAttribute('aria-label', 'open mobile menu');
+    mobileMenu.classList.remove('nav-open');
+    hamburger.classList.remove('is-active');
+  } else {
+    mobileMenu.classList.add('nav-open');
+    hamburger.classList.add('is-active');
+    this.setAttribute('aria-expanded', 'true');
+    this.setAttribute('aria-label', 'close mobile menu');
+  }
+}

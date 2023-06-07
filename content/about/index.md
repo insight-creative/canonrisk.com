@@ -8,7 +8,7 @@ menu:
 seo:
   page_title: About | Health Care Audit Firm
   meta_description: Canon Risk Consultants is a top-tier medical cost containment company offering fast, expert hospital bill review, negotiation, resolution and risk transfer.
-  featured_image:
+  featured_image: /uploads/woman-reviewing-invoice-at-desk-2.jpg
 hero: 
   enabled: true
   heading: About Us
@@ -16,7 +16,7 @@ hero:
     Canon Risk Consultants is a top-tier medical cost containment company offering fast, expert hospital bill review, negotiation, resolution and risk transfer.
   image: 
     image_url: /uploads/woman-reviewing-invoice-at-desk-2.jpg
-    image_alt:
+    image_alt: Nurse at desk reviewing medical charting and paperwork
   button:
     enabled: false
     open_in_new_tab: true
@@ -38,7 +38,7 @@ intro:
     With an unparalleled background in healthcare, our team is comprised of some of the top professionals in the industry. We pride ourselves on being able to offer our clients personalized service, maximum savings and timely, accurate support.
   image: 
     image_url: /uploads/woman-reviewing-invoice-at-desk-3.jpg
-    image_alt:
+    image_alt: woman at desk reviewing a medical invoice
   button:
     enabled: false
     open_in_new_tab: false
@@ -51,7 +51,7 @@ benefits:
     - heading: Backed by the Best Professionals in the Industry
       body: We are proud to be backed by some of the best doctors, nurses and attorneys in the field. Clients can expect premier healthcare cost containment services and risk transfer, tailored to meet unique needs.
     - heading: Fast, Responsive Services
-      body: At Canon Risk Consultants (CRC), we realize that time is of the essence, which is why we work faster than other healthcare audit firms. Our team is highly responsive, ensuring our clients receive the personal attention they deserve. We guarantee a 48-hour turnaround time on professional analysis of claims, providing our customers with fast, reliable services they can count on.
+      body: At Canon Risk Consultants (CRC), we realize that time is of the essence, which is why we work faster than other healthcare audit firms. Our team is highly responsive, ensuring our clients receive the personal attention they deserve. We strive for a 48-hour turnaround time on professional analysis of claims, providing our customers with fast, reliable services they can count on.
     - heading: Personalized Services for Unique Needs
       body: We believe that every client is unique. That's why we communicate directly with TPAs and clients in insurance, government and self-insured industries. We want to understand each situation, providing premier services customized to meet specific needs.
 our_founder: 
@@ -81,6 +81,6 @@ our_founding_philosophy:
     enabled: true
     open_in_new_tab: false
     button_url: /contact/
-    button_text: Make a Referral
+    button_text: Contact Us
 ---
 

@@ -1,11 +1,10 @@
-{{ define "content" }}
-{{ partial "blog/blog-hero" . }}
-<section class="fade-wrapper padding-top-4 padding-bottom-4" data-scroll-section>
-    <div class="container">
+{{ define "main" }}
+<section class="block">
+    <div class="wrapper-sm">
         <article>
+            <h1>404 page not found</h1>
             <p>The page you requested could not be found. <a href="{{ "/" | relURL }}">Go back to the homepage.</a></p>
         </article>
     </div>
 </section>
-{{ partial "blog-feed" . }}
 {{ end }}

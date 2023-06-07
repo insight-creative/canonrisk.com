@@ -16,7 +16,7 @@ hero:
     Contact Canon Risk Consultants for expert claim review and cost containment. Our team offers punctual and personalized bill review, negotiation and resolution.
   image: 
     image_url: /uploads/woman-on-phone-reviewing-paperwork.jpg
-    image_alt:
+    image_alt: Woman talking on cell phone while reviewing medical invoice
   button:
     enabled: false
     open_in_new_tab: true
