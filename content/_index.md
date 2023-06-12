@@ -14,8 +14,8 @@ hero:
   body: >-
     Canon Risk Consultants provides cost containment solutions via
     industry-leading personalized service, maximum savings and timely, accurate
-    responsivity. With an unparalleled backgroundin healthcare, our team is
-    comprisedof top-tier industry professionals.
+    responsivity. With an unparalleled background in healthcare, our team is
+    comprised of top-tier industry professionals.
 
 
     Your time matters-and delegation is key.
@@ -42,8 +42,8 @@ intro:
   subheading:
   body: >-
     We partner with insurance providers, third-party administrators (TPAs),
-    governmententities and self-insured industries to assess financial risk of
-    medical claims andnavigate a conservative fiscal path forward.
+    government entities and self-insured industries to assess financial risk of
+    medical claims and navigate a conservative fiscal path forward.
 
 
     Clients can expect:
