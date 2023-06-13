@@ -1,4 +1,4 @@
-baseURL = "/"
+baseURL = "https://canonrisk.com/"
 languageCode = "en-us"
 title = "Canon Risk Consultants"
 enableRobotsTXT = true
