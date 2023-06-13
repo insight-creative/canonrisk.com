@@ -48,7 +48,9 @@
   display: block;
   width: 100%;
   transition: color $transition;
-  font-family: $secondary-font;
+  font-family: $primary-font;
+  text-transform: uppercase;
+  font-weight: 500;
 
   &:hover,
   &:focus {
