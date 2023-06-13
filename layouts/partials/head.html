@@ -64,7 +64,7 @@
   
     {{ partialCached "schema-data/local-business" . }}
   
-    {{ if eq .RelPermalink "/our-team/" }}
+    {{ if eq .RelPermalink "/about/" }}
       {{ partialCached "schema-data/about-page" . }}
   
     {{ else if eq $pageSection "blog" }}
